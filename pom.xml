@@ -4,8 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+
     <groupId>3dsAPI</groupId>
-    <artifactId>3dsAPI.ams.ssr</artifactId>
+    <artifactId>assetmaker</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 <dependencies>
@@ -30,34 +35,59 @@
         <version>RELEASE</version>
         <scope>compile</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-path</artifactId>
+        <version>3.3.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20180813</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+    <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1</version>
+    </dependency>
+
 </dependencies>
 
 
+<!--<build>-->
+    <!--<pluginManagement>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>3.0.0-M3</version>-->
+                <!--<configuration>-->
+                    <!--<suiteXmlFiles>-->
+                        <!--<suiteXmlFile>testng.xml</suiteXmlFile>-->
+                    <!--</suiteXmlFiles>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+            <!--&lt;!&ndash;<plugin>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<version>3.0.0-M3</version>&ndash;&gt;-->
+            <!--&lt;!&ndash;<configuration>&ndash;&gt;-->
+            <!--&lt;!&ndash;<systemPropertyVariables>&ndash;&gt;-->
+            <!--&lt;!&ndash;<propertyName>firefox</propertyName>&ndash;&gt;-->
+            <!--&lt;!&ndash;</systemPropertyVariables>&ndash;&gt;-->
+            <!--&lt;!&ndash;</configuration>&ndash;&gt;-->
+            <!--&lt;!&ndash;</plugin>&ndash;&gt;-->
+
+        <!--</plugins>-->
+    <!--</pluginManagement>-->
+<!--</build>-->
 
 
 
 </project>
-<!--<plugins>-->
-<!--<plugin>-->
-    <!--<groupId>org.apache.maven.plugins</groupId>-->
-    <!--<artifactId>maven-surefire-plugin</artifactId>-->
-    <!--<version>3.0.0-M3</version>-->
-    <!--<configuration>-->
-        <!--<suiteXmlFiles>-->
-            <!--<suiteXmlFile>testng.xml</suiteXmlFile>-->
-        <!--</suiteXmlFiles>-->
-    <!--</configuration>-->
-<!--</plugin>-->
-
-<!--&lt;!&ndash;<plugin>&ndash;&gt;-->
-<!--&lt;!&ndash;<groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
-<!--&lt;!&ndash;<artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;<version>3.0.0-M3</version>&ndash;&gt;-->
-<!--&lt;!&ndash;<configuration>&ndash;&gt;-->
-<!--&lt;!&ndash;<systemPropertyVariables>&ndash;&gt;-->
-<!--&lt;!&ndash;<propertyName>firefox</propertyName>&ndash;&gt;-->
-<!--&lt;!&ndash;</systemPropertyVariables>&ndash;&gt;-->
-<!--&lt;!&ndash;</configuration>&ndash;&gt;-->
-<!--&lt;!&ndash;</plugin>&ndash;&gt;-->
-
-<!--</plugins>-->

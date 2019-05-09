@@ -1,4 +1,5 @@
-package com.models;
+package java.com.models;
+import java.com.models.Scene;
 
 import java.util.ArrayList;
 
@@ -6,15 +7,14 @@ public class Cct_project {
     private String projectId;
     private String projectName;
     private int scheme;
+    private String softwareVersion;
+    private String projectPreview;
+    private int projectVersion;
+    private ArrayList<Scene> scenes;
 
     public String getProjectId() {
         return projectId;
     }
-
-    private String softwareVersion;
-    private String projectPreview;
-    private int projectVersion;
-    private ArrayList<Object> scenes;
 
     public static class Builder{
         private Cct_project newCct_project;
@@ -52,7 +52,7 @@ public class Cct_project {
             newCct_project.projectVersion = projectVersion;
             return  this;
         }
-        public Builder getScenes(ArrayList<Object> scenes) {
+        public Builder getScenes(ArrayList<Scene> scenes) {
             newCct_project.scenes = scenes;
             return this;
         }
@@ -62,6 +62,18 @@ public class Cct_project {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Cct_project{" +
+                "projectId='" + projectId + '\'' +
+                ", projectName='" + projectName + '\'' +
+                ", scheme=" + scheme +
+                ", softwareVersion='" + softwareVersion + '\'' +
+                ", projectPreview='" + projectPreview + '\'' +
+                ", projectVersion=" + projectVersion +
+                ", scenes=" + scenes +
+                '}';
+    }
 }
 
 // "projectId" : "5ccb0720e75d1a0009865af3",

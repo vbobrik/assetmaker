@@ -1,0 +1,7 @@
+<suite name ="Suite1" verbose="5">
+<test name="testProject">
+<classes>
+    <class name="allTests.TestProject"/>
+</classes>
+</test>
+</suite>
